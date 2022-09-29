@@ -5,20 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Library</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
         <header>
             <nav>
                 <ul>
-                    <li><a href="#"></a></li>
+                    <li><a href="#cards">Card</a></li>
                 </ul>
             </nav>
         </header>
         <body>
-            <div class="card">
-                <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
-                <h3 class="card__head">Card's heading</h3>
-                <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+            <h1>CSS Library</h1>
+            <h2 id="cards">Card component</h2>
+            <div class="container">
+                <div class="card">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
+                    <h3 class="card__head">Card's heading</h3>
+                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                </div>
+                <div class="card card--dark">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
+                    <h3 class="card__head">Card's heading</h3>
+                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
+                    <h3 class="card__head">Card's heading</h3>
+                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <a class="card__button card__button--blue" href="#">press</a>
+                </div>
             </div>
         </body>
 </body>
