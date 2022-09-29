@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *Jan Serbus*
 ## Demo site
-Link to **[demo](http://www.github.io)** site for preview.
+Look at **[this](https://pslib-cz.github.io/2022l4web-css-typographic-library-janserbus/)** site for preview.
 ## Dependecies
 ...
 ## Implementation
