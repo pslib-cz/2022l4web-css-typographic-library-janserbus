@@ -5,18 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Library</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/components.css">
 </head>
 <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#cards">Card</a></li>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
                 </ul>
             </nav>
         </header>
-        <body>
+        <body style="width: 1160px; margin: 0 auto;">
             <h1>CSS Library</h1>
+            <h2>Typographyc elements</h2>
+            <ul>
+                <li>All &#60;h&#62; elements</li>
+                <li>&#60;p&#62; element</li>
+                <li>&#60;ul&#62; and &#60;li&#62; elements</li>                
+                <li>Remade &#60;code&#62; element and added <code>.codeblock</code> element</li>                             
+            </ul>
+            <h3>p element</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam doloribus! Voluptas praesentium tempore vero atque. Quaerat, earum corrupti porro repellat consequuntur ratione, repellendus autem magni, reiciendis laborum facere excepturi. Cupiditate quos atque consectetur dolor itaque alias fugit? Aliquam adipisci modi aperiam beatae officiis ex sunt veritatis! Dolorem iste tenetur dolor architecto accusantium distinctio autem at molestiae impedit voluptatem sunt dolores sed delectus, nam aut fugiat commodi. Sint!
+            </p>
+            <h3>List definition</h3>
+            <ul>
+                <li>list element</li>
+                <li>list element</li>
+                <li>list element</li>
+            </ul>
+
+            <h3>Code definition</h3>
+            <p>&#60;code&#62; element can be used as part of a text</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, <code>printf("Hello, world!");</code> adipisicing elit. Beatae soluta, modi totam saepe ratione dignissimos eligendi quaerat fugit accusamus a id ex quisquam nobis perspiciatis minus repellat praesentium porro impedit!
+            </p>            
+            <p>or as code block</p>                     
+            <div class="codeblock">
+                <code class="codeblock__content">       
+#include &#60;stdio.h&#62;
+
+int main(void)
+{
+    printf("Hello, world!");
+}    
+                </code>
+            </div>                
+                  
+
             <h2 id="cards">Card component</h2>
             <div class="card__container">
                 <div class="card">
