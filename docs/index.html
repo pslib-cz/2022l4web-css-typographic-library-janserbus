@@ -5,25 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Library</title>
-    <link rel="stylesheet" href="../css/typography.css">
-    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/components.css">
 </head>
 <body>
         <header>
-            <nav class="navbar">
+            <nav class="navbar">                
+                <a href="./index.html">
+                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
+                </a>                
                 <ul class="navbar__list">
+                    <li class="navbar__content"><a class="navbar__link" href="#cards">Typography</a></li>
+                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
+                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
                     <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
                 </ul>
             </nav>
         </header>
-        <body style="width: 1160px; margin: 0 auto;">
+        <body>
             <h1>CSS Library</h1>
             <h2>Typographyc elements</h2>
             <ul>
                 <li>All &#60;h&#62; elements</li>
                 <li>&#60;p&#62; element</li>
                 <li>&#60;ul&#62; and &#60;li&#62; elements</li>                
-                <li>Remade &#60;code&#62; element and added <code>.codeblock</code> element</li>                             
+                <li>Remade &#60;code&#62; element and added <code>.codeblock</code> component</li>                             
             </ul>
             <h3>p element</h3>
             <p>
@@ -70,7 +76,7 @@ int main(void)
                     <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
                     <h3 class="card__head">Card's heading</h3>
                     <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
-                    <a class="card__button card__button--blue" href="#">press</a></div>
+                    <a class="card__button card__button--blue" href="#">Button</a></div>
                 </div>
             </div>
         </body>
