@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/components.css">
 </head>
-<body class="row">
+<body>
         <header>
-            <nav class="navbar">                
-                <a href="./index.html">
-                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
-                </a>                
-                <ul class="navbar__list">
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Typography</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                </ul>
-            </nav>
+            <div class="navbar__container navbar__container--background">
+                <nav class="navbar navbar--background row">                
+                    <a href="./index.html">
+                        <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
+                    </a>                
+                    <ul class="navbar__list">
+                        <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
+                    </ul>     
+                    <h1 class="navbar__title">Totaly Awesome CSS Library</h1>                
+                </nav>                               
+            </div>
         </header>
-        <body>
-            <h1>Totaly Awesome CSS Library</h1>
+        <main class="row">            
             <p>This Library redefines those selements:</p>
             <ul>
                 <li>All <b>&#60;h&#62;</b> elements</li>
@@ -33,8 +35,8 @@
                 <li>Remade <b>&#60;code&#62;</b> element and added <code>.codeblock</code> component</li>   
                 <li>Remade <b>&#60;a&#62;</b> element</li>                           
             </ul>
-            <p>To use this part of Library download this <a href="#">file</a>.</p>
-            <h2>Usage & Showcase</h2> 
+            <p>To use this part of Library download this <a class="dbutton" href="#">file</a>.</p>
+            <h2 id="usage">Usage & Showcase</h2> 
             <!-- TODO usage segment -->     
             <h3>Headings:</header></h3>   
             <h4>Heading4</h4>  
@@ -42,7 +44,7 @@
             <h6>Heading6</h6>
             <h3>Paragraph element:</h3>
             <p>
-                C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.</p>
+                C is a <b>general-purpose</b> computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the <strong>targeted CPUs</strong>. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.</p>
             <h3>List definition:</h3>
             <ul>
                 <li>list element</li>
@@ -114,7 +116,7 @@ int main(void)
                     </ul>
                 </li>                
             </ul>
-            <h2>Responsive image</h2>
+            <h2 id="image">Responsive image</h2>
             <figure class="image__container">
                 <img class="image" src="./img/landscape_1.jfif" alt="image">
                 <figcaption class="image__caption">Caption here - very beautiful landscape</figcaption>
@@ -128,7 +130,20 @@ int main(void)
 &#60;figure&#62;   
                 </code>
             </div>
-            <h2>NavBar</h2>
+            <h2 id="navbar">NavBar</h2>
+            <div class="navbar__container">
+                <nav class="navbar navbar--sticky row">                
+                    <a href="./index.html">
+                        <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
+                    </a>                
+                    <ul class="navbar__list">
+                        <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
+                        <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
+                    </ul>                    
+                </nav>                               
+            </div>
         </body>
 </body>
 </html>
