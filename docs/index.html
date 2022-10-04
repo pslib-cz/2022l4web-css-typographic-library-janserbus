@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/components.css">
 </head>
-<body>
+<body class="row">
         <header>
             <nav class="navbar">                
                 <a href="./index.html">
@@ -23,16 +23,17 @@
             </nav>
         </header>
         <body>
-            <h1>Totaly Awesom CSS Library</h1>
+            <h1>Totaly Awesome CSS Library</h1>
             <ul>
                 <li>All &#60;h&#62; elements</li>
                 <li>&#60;p&#62; element</li>
                 <li>&#60;ul&#62; and &#60;li&#62; elements</li>                
                 <li>Remade &#60;code&#62; element and added <code>.codeblock</code> component</li>                             
             </ul>
+
             <h2>Typographyc elements</h2>          
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, optio eius voluptas dignissimos vel qui ipsa nemo saepe earum, delectus dolor? Dignissimos quae quidem reprehenderit ad odio vero, iste, nesciunt est necessitatibus molestias architecto doloribus praesentium facilis. Eveniet eos accusantium, natus nesciunt nulla a veniam animi quidem corrupti nobis vel obcaecati temporibus porro quod consequatur ipsam voluptas quibusdam cumque voluptate adipisci praesentium aut. Quibusdam hic eum incidunt maiores. Eligendi ratione deleniti ipsum autem. Corporis corrupti est aperiam laboriosam voluptatem. Repellat sapiente sed, aspernatur consequuntur praesentium aliquam architecto labore. Ex corporis, dignissimos quidem perspiciatis accusamus aliquam numquam possimus odit. Alias iusto neque ad soluta, aliquid vitae. Quaerat distinctio doloribus dicta dolor accusantium quis. Consequuntur vel aliquid earum? Est maxime nemo eos.</p>  
-            <h3>p element:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur <code>adipisicing elit. Sit</code>, optio eius voluptas dignissimos vel qui ipsa nemo saepe earum, <code>delectus dolor? Dignissimos quae quidem reprehenderit ad odio vero,</code> iste, nesciunt est necessitatibus molestias architecto doloribus praesentium facilis. Eveniet eos accusantium, natus nesciunt nulla a veniam animi quidem corrupti nobis vel obcaecati temporibus porro quod consequatur ipsam voluptas quibusdam cumque voluptate adipisci praesentium aut. Quibusdam hic eum incidunt maiores. Eligendi ratione deleniti ipsum autem. Corporis corrupti est aperiam laboriosam voluptatem. Repellat sapiente sed, aspernatur consequuntur praesentium aliquam architecto labore. Ex corporis, dignissimos quidem perspiciatis accusamus aliquam numquam possimus odit. Alias iusto neque ad soluta, aliquid vitae. Quaerat distinctio doloribus dicta dolor accusantium quis. Consequuntur vel aliquid earum? Est maxime nemo eos.</p>  
+            <h3>Paragraph element:</h3>
             <p>
                 C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.</p>
             <h3>List definition:</h3>
@@ -41,7 +42,6 @@
                 <li>list element</li>
                 <li>list element</li>
             </ul>
-
             <h3>Code definition:</h3>
             <p>&#60;code&#62; element can be used as part of a text:</p>
             <p>
@@ -57,27 +57,27 @@ int main(void)
     printf("Hello, world!");
 }    
                 </code>
-            </div>                
-                  
+            </div>                                 
 
             <h2 id="cards">Card component</h2>
-            <p>This is card....</p>
+            <p>This is card. Use it as you like!</p>
             <div class="card__container">
                 <div class="card">
                     <h3 class="card__head">Card's heading</h3>
-                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina">
-                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
                 </div>
                 <div class="card card--dark">
-                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
                     <h3 class="card__head">Card's heading</h3>
-                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <a class="card__button card__button--space" href="#">Button</a>
                 </div>
                 <div class="card">
-                    <img class="card__img" src="./img/landscape_1.jfif" alt="krajina" >
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape" >
                     <h3 class="card__head">Card's heading</h3>
-                    <p class="card__parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
-                    <a class="card__button card__button--blue" href="#">Button</a>
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <a class="card__button card__button--centere" href="#">Button</a>
                 </div>                
             </div>
             <h3>Usage:</h3>
@@ -87,13 +87,32 @@ int main(void)
     &#60;div class="card"&#62;
         &#60;img class="card__img" src="./img/landscape_1.jfif" alt="krajina"&#62;
         &#60;h3 class="card__head"&#62;Card's heading&#60;/h3&#62;
-        &#60;p class="card__parg"&#62;Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.&#60;/p&#62;
-        &#60;a class="card__button card__button--blue" href="#"&#62;Button&#60;/a&#62;
+        &#60;p class="card__content"&#62;Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.&#60;/p&#62;
+        &#60;a class="card__button" href="#"&#62;Button&#60;/a&#62;
     &#60;div&#62;
 &#60;div&#62;   
                 </code>
             </div> 
-            <h2>Another component</h2>
+            <h3>Modifiers:</h3>
+            <ul>
+                <li>Card Modifiers
+                    <ul>
+                        <li>use  class: <code>card--dark</code> to anable dark theme</li>
+                    </ul>
+                </li>
+                <li>Button Modifiers
+                    <ul>
+                        <li>use class: <code>card__button--center</code> to center button text</li>
+                        <li>use class: <code>card__button--space</code> make button spaced in the middle of a card</li>
+                    </ul>
+                </li>                
+            </ul>
+            <h2>Responsive image</h2>
+            <figure class="image__container">
+                <img class="image" src="./img/landscape_1.jfif" alt="image">
+                <figcaption class="image__caption">Caption here - very beautiful landscape</figcaption>
+            </figure>
+            <h2>NavBar</h2>
         </body>
 </body>
 </html>
