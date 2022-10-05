@@ -40,13 +40,12 @@
         <ul>
             <li><code>.codeblock</code> component to show full sections of code</li>
             <li><code>.dbutton</code> component to indicate download button</li>
-            <li>.modular <code>card</code> component</li>
+            <li>modular <code>.card</code> component</li>
             <li>responsive <code>.image</code> component</li>
             <li>custom <code>.navbar</code> component</li>
         </ul>
         <p>To use any of these components use <a class="dbutton" href="#">this file</a></p>
         <h2 id="usage">Usage & Showcase</h2> 
-        <!-- TODO usage segment -->     
         <h3>Headings:</h3>   
         <h4>Heading4</h4>  
         <h5>Heading5</h5>  
@@ -61,21 +60,28 @@
             <li>list element</li>
         </ul>
         <h3>Code definition:</h3>
-        <p>&#60;code&#62; element can be used as part of a text:</p>
+        <p><b>&#60;code&#62;</b> element can be used as part of a text:</p>
         <p>
             Lorem ipsum dolor sit amet consectetur, <code>printf("Hello, world!");</code> adipisicing elit. Beatae soluta, modi totam saepe ratione dignissimos eligendi quaerat fugit accusamus a id ex quisquam nobis perspiciatis minus repellat praesentium porro impedit!
         </p>            
-        <p>or as code block:</p>
+        <p>or as <b>codeblock</b> using this structure:</p>
         <div class="codeblock">
             <code class="codeblock__content">       
+        &#60;div class="codeblock"&#62;
+            &#60;code class="codeblock__content"&#62;
 #include &#60;stdio.h&#62;
 
 int main(void)
 {
-printf("Hello, world!");
-}    
+printf("Hello, world!")
+}
+            &#60;code&#62;
+        &#60;div&#62;
             </code>
-        </div>                                 
+        </div>                
+        <p>You have to put <b>all your code</b> at the begining of the line to avoid createing whitespace</p>              
+        <h3>a tag definition:</h3>   
+        <p>you can use <b>&#60;a&#62;</b> as <a href="#">link</a> or as a inline <a class="dbutton" href="#">Button</a> using <code>.dbutton</code> class</p>
 
         <h2 id="cards">Card component</h2>
         <p>This is card. Use it as you like!</p>
@@ -102,12 +108,12 @@ printf("Hello, world!");
         <div class="codeblock">
             <code class="codeblock__content">       
 &#60;div class="card__container"&#62;
-&#60;div class="card"&#62;
-    &#60;img class="card__img" src="./img/landscape_1.jfif" alt="krajina"&#62;
-    &#60;h3 class="card__head"&#62;Card's heading&#60;/h3&#62;
-    &#60;p class="card__content"&#62;Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.&#60;/p&#62;
-    &#60;a class="card__button" href="#"&#62;Button&#60;/a&#62;
-&#60;div&#62;
+    &#60;div class="card"&#62;
+        &#60;img class="card__img" src="./img/landscape_1.jfif" alt="landscape"&#62;
+        &#60;h3 class="card__head"&#62;Card's heading&#60;/h3&#62;
+        &#60;p class="card__content"&#62;Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.&#60;/p&#62;
+        &#60;a class="card__button" href="#"&#62;Button&#60;/a&#62;
+    &#60;div&#62;
 &#60;div&#62;   
             </code>
         </div> 
@@ -134,14 +140,16 @@ printf("Hello, world!");
         <div class="codeblock">
             <code class="codeblock__content">       
 &#60;figure class="image__container"&#62;    
-&#60;img class="image" src="./img/landscape_1.jfif" alt="image"&#62;
-&#60;figcaption class="image__caption"&#62;Caption here - very beautiful landscape&#60;/figcaption&#62;    
+    &#60;img class="image" src="./img/landscape_1.jfif" alt="image"&#62;
+    &#60;figcaption class="image__caption"&#62;Caption here - very beautiful landscape&#60;/figcaption&#62;    
 &#60;figure&#62;   
             </code>
         </div>
         <h2 id="navbar">NavBar</h2>
+        <p>You can use two types of navbars</p>
+        <h3>Simple Navbar:</h3>
         <div class="navbar__container">
-            <nav class="navbar navbar--sticky row">                
+            <nav class="navbar row">                
                 <a href="./index.html">
                     <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
                 </a>                
@@ -151,8 +159,66 @@ printf("Hello, world!");
                     <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
                     <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
                 </ul>                    
+            </nav>                  
+        </div>
+        <h3>Usage:</h3> 
+        <div class="codeblock">
+            <code class="codeblock__content">
+&#60;div class="navbar__container"&#62;
+    &#60;nav class="navbar"&#62;
+        &#60;a href="./index.html"&#62;
+            &#60;img class="navbar__logo" src="./img/logo-white.svg" alt="logo"&#62;
+        &#60;/a&#62;
+        &#60;ul&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#usage"&#62;Usage&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#cards"&#62;Card&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#iamge"&#62;Image&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#navbar"&#62;NavBar&#60;/a&#62;&#60;/li&#62;
+        &#60;/ul&#62;
+    &#60;/nav&#62;
+&#60;/div&#62;
+            </code>
+        </div>
+        <h3>Navbar with background image:</h3>
+        <div class="navbar__container navbar__container--background">
+            <nav class="navbar navbar--background row">                
+                <a href="./index.html">
+                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
+                </a>                
+                <ul class="navbar__list">
+                    <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
+                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
+                    <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
+                    <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
+                </ul>     
+                <h3 class="navbar__title" style="font-size: 4rem;">Totally Awesome CSS Library</h3>                
             </nav>                               
         </div>
+        <h3>Usage:</h3>
+        <div class="codeblock">
+            <code class="codeblock__content">
+&#60;div class="navbar__container navbar__container--background"&#62;
+    &#60;nav class="navbar navbar--background row&#62;
+        &#60;a href="./index.html"&#62;
+            &#60;img class="navbar__logo" src="./img/logo-white.svg" alt="logo"&#62;
+        &#60;/a&#62;
+        &#60;ul&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#usage"&#62;Usage&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#cards"&#62;Card&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#iamge"&#62;Image&#60;/a&#62;&#60;/li&#62;
+            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#navbar"&#62;NavBar&#60;/a&#62;&#60;/li&#62;
+        &#60;/ul&#62;
+        &#60;h1 class="navbar__title"&#62;Totally Awesome CSS Library&#60;/h1&#62;
+    &#60;/nav&#62;
+&#60;/div&#62;
+            </code>
+        </div>
     </main>
+    <footer>
+        <div class=" footer row">
+           <p class="footer__content"> created by: Jan Serbus</p>
+           <p class="footer__content"> SPŠSE a VOŠ Liberec</p>
+        </div>
+    </footer>
 </body>
 </html>
