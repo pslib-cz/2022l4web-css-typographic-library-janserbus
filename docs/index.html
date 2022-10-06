@@ -10,19 +10,22 @@
 </head>
 <body>
     <header>
-        <div class="navbar__container navbar__container--background">
-            <nav class="navbar navbar--background row">                
-                <a href="./index.html">
-                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
-                </a>                
-                <ul class="navbar__list">
-                    <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
-                </ul>     
-                <h1 class="navbar__title">Totally Awesome CSS Library</h1>                
-            </nav>                               
+        <div class="navbar__container">
+            <nav class="navbar navbar--fixed row">
+                <a class="navbar__logo" href="./index.html"></a>
+                <ul class="navbar__list navlist">
+                    <li class="navlist__content"><a class="navlist__link" href="#usage">Usage</a></li>
+                    <li class="navlist__content"><a class="navlist__link" href="#cards">Cards</a></li>
+                    <li class="navlist__content"><a class="navlist__link" href="#image">Image</a></li>
+                    <li class="navlist__content"><a class="navlist__link" href="#navbar">NavBar</a></li>
+                </ul>
+                <div class="navbar__hamburger hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </div>
+            </nav>
+            <h1 class="navbar__title">Totally Awesome CSS Library</h1>
         </div>
     </header>
     <main class="row">            
@@ -147,72 +150,11 @@ printf("Hello, world!")
         </div>
         <h2 id="navbar">NavBar</h2>
         <p>You can use two types of navbars</p>
-        <h3>Simple Navbar:</h3>
-        <div class="navbar__container">
-            <nav class="navbar row">                
-                <a href="./index.html">
-                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
-                </a>                
-                <ul class="navbar__list">
-                    <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
-                </ul>                    
-            </nav>                  
-        </div>
-        <h3>Usage:</h3> 
-        <div class="codeblock">
-            <code class="codeblock__content">
-&#60;div class="navbar__container"&#62;
-    &#60;nav class="navbar"&#62;
-        &#60;a href="./index.html"&#62;
-            &#60;img class="navbar__logo" src="./img/logo-white.svg" alt="logo"&#62;
-        &#60;/a&#62;
-        &#60;ul&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#usage"&#62;Usage&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#cards"&#62;Card&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#iamge"&#62;Image&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#navbar"&#62;NavBar&#60;/a&#62;&#60;/li&#62;
-        &#60;/ul&#62;
-    &#60;/nav&#62;
-&#60;/div&#62;
-            </code>
-        </div>
-        <h3>Navbar with background image:</h3>
-        <div class="navbar__container navbar__container--background">
-            <nav class="navbar navbar--background row">                
-                <a href="./index.html">
-                    <img class="navbar__logo" src="./img/logo-white.svg" alt="logo">
-                </a>                
-                <ul class="navbar__list">
-                    <li class="navbar__content"><a class="navbar__link" href="#usage">Usage</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#cards">Card</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#image">Image</a></li>
-                    <li class="navbar__content"><a class="navbar__link" href="#navbar">NavBar</a></li>
-                </ul>     
-                <h3 class="navbar__title" style="font-size: 4rem;">Totally Awesome CSS Library</h3>                
-            </nav>                               
-        </div>
+        <h3>Simple Navbar:</h3>        
+        <h3>Usage:</h3>     
+        <h3>Navbar with background image:</h3>        
         <h3>Usage:</h3>
-        <div class="codeblock">
-            <code class="codeblock__content">
-&#60;div class="navbar__container navbar__container--background"&#62;
-    &#60;nav class="navbar navbar--background row&#62;
-        &#60;a href="./index.html"&#62;
-            &#60;img class="navbar__logo" src="./img/logo-white.svg" alt="logo"&#62;
-        &#60;/a&#62;
-        &#60;ul&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#usage"&#62;Usage&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#cards"&#62;Card&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#iamge"&#62;Image&#60;/a&#62;&#60;/li&#62;
-            &#60;li class="navbar__content"&#62;&#60;a class="navbar__link" href="#navbar"&#62;NavBar&#60;/a&#62;&#60;/li&#62;
-        &#60;/ul&#62;
-        &#60;h1 class="navbar__title"&#62;Totally Awesome CSS Library&#60;/h1&#62;
-    &#60;/nav&#62;
-&#60;/div&#62;
-            </code>
-        </div>
+        
     </main>
     <footer>
         <div class=" footer row">
@@ -220,5 +162,6 @@ printf("Hello, world!")
            <p class="footer__content"> SPŠSE a VOŠ Liberec</p>
         </div>
     </footer>
+    <script src="./hamburger.js"></script>
 </body>
 </html>
