@@ -1,0 +1,23 @@
+.h1
+{
+    font-size: 4rem;
+    border-bottom: 2px solid var(--black);
+}
+.h2{
+    font-size: 3rem;
+    border-bottom: 1px solid var(--black);
+}
+.h3{
+    font-size: 2rem;    
+}
+.align_vertical{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px){
+    .align_vertical{
+        flex-direction: column;
+    }
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totaly Awesome CSS</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/components.css">
 </head>
@@ -29,27 +30,37 @@
         </div>
     </header>
     <main class="row">            
-        <h3>This Library redefines those elements:</h3>
-        <ul>
-            <li>All <b>&#60;h&#62;</b> elements</li>
-            <li><b>&#60;p&#62;</b> element</li>
-            <li><b>&#60;ul&#62;</b>, <b>&#60;ol&#62;</b> and <b>&#60;li&#62;</b> elements</li>
-            <li><b>&#60;b&#62;</b> and <b>&#60;strong&#62;</b> elements</li>
-            <li>Remade <b>&#60;code&#62;</b> element</li> 
-            <li>Remade <b>&#60;a&#62;</b> element</li>                           
-        </ul>
-        <p>To use this part of Library download <a class="dbutton" href="#">this file</a>.</p>
-        <h3>Components created in this Library:</h3>
-        <ul>
-            <li><code>.codeblock</code> component to show full sections of code</li>
-            <li><code>.dbutton</code> component to indicate download button</li>
-            <li>modular <code>.card</code> component</li>
-            <li>responsive <code>.image</code> component</li>
-            <li>custom <code>.navbar</code> component</li>
-        </ul>
-        <p>To use any of these components use <a class="dbutton" href="#">this file</a></p>
+        <p>This Library was created as a school project.</p>
+        <section class="align_vertical">
+            <div>
+            <h3>These elements were modified:</h3>
+                <ul>
+                    <li>All <b>&#60;h&#62;</b> elements</li>
+                    <li><b>&#60;p&#62;</b> element</li>
+                    <li><b>&#60;ul&#62;</b>, <b>&#60;ol&#62;</b> and <b>&#60;li&#62;</b> elements</li>
+                    <li><b>&#60;b&#62;</b> and <b>&#60;strong&#62;</b> elements</li>
+                    <li>Remade <b>&#60;code&#62;</b> element</li> 
+                    <li>Remade <b>&#60;a&#62;</b> element</li>                           
+                </ul>
+                <p>To acces this part of Library use <a class="dbutton" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-janserbus/blob/master/docs/css/typography.css" target="_blank">this</a> file.</p>
+            </div>
+            <div>
+                <h3>Components created in this Library:</h3>
+                <ul>
+                    <li><code>.codeblock</code> component to show full sections of code</li>
+                    <li><code>.dbutton</code> component to indicate download button</li>
+                    <li>modular <code>.card</code> component</li>
+                    <li>responsive <code>.image</code> component</li>
+                    <li>custom <code>.navbar</code> component</li>
+                </ul>
+                <p>To acces any of these components use <a class="dbutton" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-janserbus/blob/master/docs/css/components.css" target="_blank">this</a> file.</p>
+            </div>
+        </section>
         <h2 id="usage">Usage & Showcase</h2> 
         <h3>Headings:</h3>   
+        <h4 class="h1">Heading1</h4>
+        <h4 class="h2">Heading2</h4>
+        <h4 class="h3">Heading3</h4>
         <h4>Heading4</h4>  
         <h5>Heading5</h5>  
         <h6>Heading6</h6>
@@ -62,14 +73,15 @@
             <li>list element</li>
             <li>list element</li>
         </ul>
-        <h3>Code definition:</h3>
-        <p><b>&#60;code&#62;</b> element can be used as part of a text:</p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, <code>printf("Hello, world!");</code> adipisicing elit. Beatae soluta, modi totam saepe ratione dignissimos eligendi quaerat fugit accusamus a id ex quisquam nobis perspiciatis minus repellat praesentium porro impedit!
-        </p>            
-        <p>or as <b>codeblock</b> using this structure:</p>
-        <div class="codeblock">
-            <code class="codeblock__content">       
+        <section>
+            <h3>Code definition:</h3>
+            <p><b>&#60;code&#62;</b> element can be used as part of a text:</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, <code>printf("Hello, world!");</code> adipisicing elit. Beatae soluta, modi totam saepe ratione dignissimos eligendi quaerat fugit accusamus a id ex quisquam nobis perspiciatis minus repellat praesentium porro impedit!
+            </p>            
+            <p>or as <b>codeblock</b> using this structure:</p>
+            <div class="codeblock">
+                <code class="codeblock__content">       
         &#60;div class="codeblock"&#62;
             &#60;code class="codeblock__content"&#62;
 #include &#60;stdio.h&#62;
@@ -80,36 +92,53 @@ printf("Hello, world!")
 }
             &#60;code&#62;
         &#60;div&#62;
-            </code>
-        </div>                
-        <p>You have to put <b>all your code</b> at the begining of the line to avoid createing whitespace</p>              
-        <h3>a tag definition:</h3>   
-        <p>you can use <b>&#60;a&#62;</b> as <a href="#">link</a> or as a inline <a class="dbutton" href="#">Button</a> using <code>.dbutton</code> class</p>
-
-        <h2 id="cards">Card component</h2>
-        <p>This is card. Use it as you like!</p>
-        <div class="card__container">
-            <div class="card">
-                <h3 class="card__head">Card's heading</h3>
-                <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
-                <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
-            </div>
-            <div class="card card--dark">
-                <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
-                <h3 class="card__head">Card's heading</h3>
-                <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
-                <a class="card__button card__button--space" href="#">Button</a>
-            </div>
-            <div class="card">
-                <img class="card__img" src="./img/landscape_1.jfif" alt="landscape" >
-                <h3 class="card__head">Card's heading</h3>
-                <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
-                <a class="card__button" href="#">Button</a>
+                </code>
             </div>                
-        </div>
-        <h3>Usage:</h3>
-        <div class="codeblock">
-            <code class="codeblock__content">       
+            <p>You have to put <b>all your code</b> at the begining of the line to avoid createing whitespace</p>     
+        </section>         
+        <section>
+            <h3>a tag definition:</h3>   
+            <p>you can use <b>&#60;a&#62;</b> as <a href="#">link</a> or as a inline <a class="dbutton" href="#">Button</a> using <code>.dbutton</code> class</p>
+        </section>
+        <section>
+            <h2>Inline components</h2>
+            <p>Use <code>&#60;span class="text--modifier"&#62;lorem ipsum&#60;/span&#62;</code> to highlight parts of text</p>
+            <ul>
+                <li><code>.text--green</code></li>
+                <li><code>.text--blue</code></li>
+                <li><code>.text--yelow</code></li>
+                <li><code>.text--red</code></li>
+                <li><code>.text--rainbow</code></li>
+            </ul>
+            <p>
+                Lorem <span class="text--green">ipsum</span> dolor sit amet consectetur adipisicing elit. Vitae eos dolor sit facere odit commodi sapiente est, ullam dicta natus <span class="text--rainbow">mollitia officia</span> assumenda? Praesentium temporibus <span class="text--red">reprehenderit</span> nemo magnam id aliquid! Eveniet doloribus, adipisci, fugiat tenetur atque corporis velit non ipsum, earum sit magnam! Ea aliquam excepturi natus cupiditate.
+            </p>
+        </section>
+        <section>
+            <h2 id="cards">Card component</h2>
+            <p>This is card. Use it as you like!</p>
+            <div class="card__container">
+                <div class="card">
+                    <h3 class="card__head">Card's heading</h3>
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                </div>
+                <div class="card card--dark">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape">
+                    <h3 class="card__head">Card's heading</h3>
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <a class="card__button card__button--space" href="#">Button</a>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/landscape_1.jfif" alt="landscape" >
+                    <h3 class="card__head">Card's heading</h3>
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti voluptatem dolor.</p>
+                    <a class="card__button" href="#">Button</a>
+                </div>                
+            </div>
+            <h3>Usage:</h3>
+            <div class="codeblock">
+                <code class="codeblock__content">       
 &#60;div class="card__container"&#62;
     &#60;div class="card"&#62;
         &#60;img class="card__img" src="./img/landscape_1.jfif" alt="landscape"&#62;
@@ -118,43 +147,65 @@ printf("Hello, world!")
         &#60;a class="card__button" href="#"&#62;Button&#60;/a&#62;
     &#60;div&#62;
 &#60;div&#62;   
-            </code>
-        </div> 
-        <h3>Modifiers:</h3>
-        <ul>
-            <li>Card Modifiers
-                <ul>
-                    <li>use  class: <code>card--dark</code> to anable dark theme</li>
-                </ul>
-            </li>
-            <li>Button Modifiers
-                <ul>
-                    <li>use class: <code>card__button--center</code> to center button text</li>
-                    <li>use class: <code>card__button--space</code> make button spaced in the middle of a card</li>
-                </ul>
-            </li>                
-        </ul>
-        <h2 id="image">Responsive image</h2>
-        <figure class="image__container">
-            <img class="image" src="./img/landscape_1.jfif" alt="image">
-            <figcaption class="image__caption">Caption here - very beautiful landscape</figcaption>
-        </figure>
-        <h3>Usage:</h3>
-        <div class="codeblock">
-            <code class="codeblock__content">       
+                </code>
+            </div> 
+            <h3>Modifiers:</h3>
+            <ul>
+                <li>Card Modifiers
+                    <ul>
+                        <li>use  class: <code>card--dark</code> to anable dark theme</li>
+                    </ul>
+                </li>
+                <li>Button Modifiers
+                    <ul>
+                        <li>use class: <code>card__button--center</code> to center button text</li>
+                        <li>use class: <code>card__button--space</code> make button spaced in the middle of a card</li>
+                    </ul>
+                </li>                
+            </ul>
+        </section>
+        <section>
+            <h2 id="image">Responsive image</h2>
+            <figure class="image__container">
+                <img class="image" src="./img/landscape_1.jfif" alt="image">
+                <figcaption class="image__caption">Caption here - very beautiful landscape</figcaption>
+            </figure>
+            <h3>Usage:</h3>
+            <div class="codeblock">
+                <code class="codeblock__content">       
 &#60;figure class="image__container"&#62;    
     &#60;img class="image" src="./img/landscape_1.jfif" alt="image"&#62;
     &#60;figcaption class="image__caption"&#62;Caption here - very beautiful landscape&#60;/figcaption&#62;    
 &#60;figure&#62;   
-            </code>
-        </div>
-        <h2 id="navbar">NavBar</h2>
-        <p>You can use two types of navbars</p>
-        <h3>Simple Navbar:</h3>        
-        <h3>Usage:</h3>     
-        <h3>Navbar with background image:</h3>        
-        <h3>Usage:</h3>
-        
+                </code>
+            </div>
+        </section>
+        <section>
+            <h2 id="navbar">NavBar</h2>
+            <p>To use NavBar include <code>components.css</code> file into your poject and use this code structure:</p>
+            <div class="codeblock">
+                <code class="codeblock__content">     
+&lt;div class=&quot;navbar__container&quot;&gt;
+    &lt;nav class=&quot;navbar navbar--fixed&quot;&gt;
+        &lt;a class=&quot;navbar__logo&quot; href=&quot;./index.html&quot;&gt;&lt;/a&gt;
+        &lt;ul class=&quot;navbar__list navlist&quot;&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#usage&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#cards&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#image&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#navbar&quot;&gt;NavBar&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;navbar__hamburger hamburger&quot;&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;h1 class=&quot;navbar__title&quot;&gt;Totally Awesome &lt;span class=&quot;text--rainbow&quot;&gt;CSS&lt;/span&gt; Library&lt;/h1&gt;
+&lt;/div&gt;
+                </code>
+            </div>
+            <p>To change background image put image called <code>background-img.jpg</code> into the folder <code>./img</code> </p>
+        </section>             
     </main>
     <footer>
         <div class=" footer row">
@@ -162,6 +213,6 @@ printf("Hello, world!")
            <p class="footer__content"> SPŠSE a VOŠ Liberec</p>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
