@@ -115,6 +115,34 @@ printf("Hello, world!")
             </p>
         </section>
         <section>
+            <h2 id="navbar">NavBar</h2>
+            <p>To use NavBar include <code>components.css</code> file into your poject and use this code structure:</p>
+            <div class="codeblock">
+                <code class="codeblock__content">     
+&lt;div class=&quot;navbar__container&quot;&gt;
+    &lt;nav class=&quot;navbar navbar--fixed&quot;&gt;
+        &lt;a class=&quot;navbar__logo&quot; href=&quot;./index.html&quot;&gt;&lt;/a&gt;
+        &lt;ul class=&quot;navbar__list navlist&quot;&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#usage&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#cards&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#image&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#navbar&quot;&gt;NavBar&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;navbar__hamburger hamburger&quot;&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;h1 class=&quot;navbar__title&quot;&gt;Totally Awesome &lt;span class=&quot;text--rainbow&quot;&gt;CSS&lt;/span&gt; Library&lt;/h1&gt;
+&lt;/div&gt;
+                </code>
+            </div>
+            <h3>Modidiers:</h3>
+            <p>You can use one modifier in navbar <code>.navbar--fixed</code> to make navbar fixed onthe top of the screen</p>
+            <p>To change background image put image called <code>background-img.jpg</code> into the folder <code>./img</code> </p>
+        </section> 
+        <section>
             <h2 id="cards">Card component</h2>
             <p>This is card. Use it as you like!</p>
             <div class="card__container">
@@ -179,33 +207,7 @@ printf("Hello, world!")
 &#60;figure&#62;   
                 </code>
             </div>
-        </section>
-        <section>
-            <h2 id="navbar">NavBar</h2>
-            <p>To use NavBar include <code>components.css</code> file into your poject and use this code structure:</p>
-            <div class="codeblock">
-                <code class="codeblock__content">     
-&lt;div class=&quot;navbar__container&quot;&gt;
-    &lt;nav class=&quot;navbar navbar--fixed&quot;&gt;
-        &lt;a class=&quot;navbar__logo&quot; href=&quot;./index.html&quot;&gt;&lt;/a&gt;
-        &lt;ul class=&quot;navbar__list navlist&quot;&gt;
-            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#usage&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#cards&quot;&gt;Cards&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#image&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;navlist__content&quot;&gt;&lt;a class=&quot;navlist__link&quot; href=&quot;#navbar&quot;&gt;NavBar&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;div class=&quot;navbar__hamburger hamburger&quot;&gt;
-            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hamburger__bar&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
-    &lt;h1 class=&quot;navbar__title&quot;&gt;Totally Awesome &lt;span class=&quot;text--rainbow&quot;&gt;CSS&lt;/span&gt; Library&lt;/h1&gt;
-&lt;/div&gt;
-                </code>
-            </div>
-            <p>To change background image put image called <code>background-img.jpg</code> into the folder <code>./img</code> </p>
-        </section>             
+        </section>                    
     </main>
     <footer>
         <div class=" footer row">
